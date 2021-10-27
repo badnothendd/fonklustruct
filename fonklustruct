@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+ struct ogrenci{
+ 	char isim[10];
+ 	char soyisim[10];
+	int yas;
+ };
+
+ void goster(struct ogrenci a) {
+		
+	printf("ogrenci bilgileri: %s %s %d", a.isim, a.soyisim, a.yas);
+}
+
+  int main() {
+	
+	struct ogrenci ogr= {"tugba", "yildiz", 21};
+	
+    goster(ogr);
+	
+	return 0;
+}
+
+
+/*
+struct ogrenci{
+ 	char isim[10];
+ 	char soyisim[10];
+	int yas;
+ };
+
+ void goster(struct ogrenci a) {
+		
+	printf("ogrenci bilgileri: %s %s %d", a.isim, a.soyisim, a.yas);
+}
+
+struct ogrenci degerAl() {
+	
+	struct ogrenci yeni;
+	printf("bilgileri girin:");
+    scanf("%s %s %d", &yeni.isim, &yeni.soyisim, &yeni.yas);
+    return yeni;
+}
+
+  int main() {
+	
+	struct ogrenci ogrenci1 = degerAl();
+	
+    goster(ogrenci1);
+	
+	return 0;
+}
+*/
+
+
